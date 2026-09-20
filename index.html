@@ -412,7 +412,8 @@ function mostrarSorpresa(){
 
     sorpresa.classList.remove("hidden");
 
-    crearCorazones();
+    for(let k=0;k<12;k++) setTimeout(crearCorazon,k*120);
+
 
     window.scrollTo({
         top: document.body.scrollHeight,
